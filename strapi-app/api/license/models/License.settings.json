@@ -1,0 +1,31 @@
+{
+  "connection": "default",
+  "collectionName": "license",
+  "info": {
+    "name": "license",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "key": {
+      "type": "string"
+    },
+    "expriedDate": {
+      "type": "date"
+    },
+    "software": {
+      "model": "software",
+      "via": "licenses"
+    },
+    "isActive": {
+      "type": "boolean"
+    },
+    "user": {
+      "model": "user",
+      "via": "licenses",
+      "plugin": "users-permissions"
+    }
+  }
+}

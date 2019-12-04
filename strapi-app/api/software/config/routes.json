@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/softwares",
+      "handler": "Software.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/softwares/count",
+      "handler": "Software.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/softwares/:_id",
+      "handler": "Software.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/softwares",
+      "handler": "Software.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/softwares/:_id",
+      "handler": "Software.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/softwares/:_id",
+      "handler": "Software.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
